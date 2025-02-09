@@ -1,0 +1,35 @@
+AT+CGATT=1
+
+OK
+AT+SAPBR=3,1,"CONTYPE","GPRS"
+
+OK
+AT+SAPBR=1,1
+
+OK
+AT+HTTPINIT
+
+OK
+AT+HTTPPARA="URL","http://eeefinalyear.net16.net/connect.php?g_value=0&v_value=0&s_value=0"
+
+AT+HTTPPARA="URL","http://eeefinalyear.net16.net/update.php"
+
+OK
+AT+HTTPACTION=0
+
+OK
+
++HTTPACTION: 0,200,509
+AT+HTTPREAD
+
++HTTPREAD: 509
+<h1> Smoke Sensor: 150</h1><h1> Vibration Sensor: Vibrating..</h1><h1> Sound Sensor: Noise Detected..</h1><h1> Relay 1: OFF.</h1><h1> Relay 2: OFF.</h1><h1> Relay 3: OFF.</h1><h1> Relay 4: OFF.</h1><form action="button_action.php" method="post">
+    <input type="submit" name="relay1" value="Toggle Relay 1"/>
+    <input type="submit" name="relay2" value="Toggle Relay 2"/>
+    <input type="submit" name="relay3" value="Toggle Relay 3"/>
+    <input type="submit" name="relay4" value="Toggle Relay 4"/>
+</form>
+OK
+AT+HTTPTERM
+
+OK

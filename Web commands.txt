@@ -1,0 +1,6 @@
+
+Send Sensor data:
+  http://eeefinalyear.net16.net/connect.php?g_value=122&v_value=1&s_value=0
+
+Get Relay status:
+  http://eeefinalyear.net16.net/update.php

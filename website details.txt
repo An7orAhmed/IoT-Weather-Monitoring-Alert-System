@@ -1,0 +1,21 @@
+
+---------------------------- Hosting
+https://www.000webhost.com
+
+Login:
+    email: kitswarebd@gmail.com
+
+
+---------------------------- Domain
+Username: iotweathermonitor
+
+Password: %aPcdPV%Cnb1W7eMf(5D
+
+Domain: https://iotweathermonitor.000webhostapp.com/
+
+---------------------------- Database
+Name: id8176043_iot
+
+username: id8176043_iot
+
+password: kitswarebd@gmail.com

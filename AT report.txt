@@ -1,0 +1,67 @@
+AT
+AT
+
+OK
+ATE0
+ATE0
+
+OK
+AT+CGATT=1
+
+OK
+AT+SAPBR=3,1,"CONTYPE","GPRS"
+
+OK
+AT+SAPBR=1,1
+
+OK
+AT+HTTPINIT
+
+OK
+AT+HTTPPARA="URL","http://eeefinalyear.net16.net/connect.php?g_value=0&v_value=0&s_value=0"
+
+OK
+AT+HTTPACTION=0
+
+OK
+
++HTTPACTION: 0,200,285
+AT+HTTPPARA="URL","http://eeefinalyear.net16.net/connect.php?g_value=120&v_value=1&s_value=0"
+
+OK
+AT+HTTPACTION=0
+
+OK
+
++HTTPACTION: 0,200,287
+AT+HTTPPARA="URL","http://eeefinalyear.net16.net/update.php"
+
+OK
+AT+HTTPACTION=0
+
+OK
+
++HTTPACTION: 0,200,4
+AT+HTTPREAD
+
++HTTPREAD: 4
+0000
+OK
+AT+HTTPREAD
+
++HTTPREAD: 4
+0000
+OK
+AT+HTTPPARA="URL","http://eeefinalyear.net16.net/update.php"
+
+OK
+AT+HTTPACTION=0
+
+OK
+
++HTTPACTION: 0,200,4
+AT+HTTPREAD
+
++HTTPREAD: 4
+1000
+OK
